@@ -46,3 +46,47 @@
 
 
 # TODO: Derived
+'''
+() -> paranthesis
+[] -> square brackets
+{} -> curly braces
+'''
+# TODO: list [] It allows both heterogeneous and homogeneous values
+nums = [1,2,3,4,5,6,7]
+# print(nums)
+# print(type(nums))
+
+# print(nums[0])
+
+# TODO: tuple ()
+nums = (1,2,3,4,5,6,7)
+# print(type(nums))
+# print(nums)
+
+
+# TODO : set {}
+# s = {1,2,3,4,5,6}
+# print(s)
+# print(type(s))
+
+# TODO: dictionary {key : value}
+stu = {
+    "fname" : "John",
+    "lname" : "Doe",
+    "course" : ["Python","django"],
+    
+}
+# print(stu)
+# print(type(stu))
+
+# TODO: range(start_index , end_index + 1 , step)
+
+# nums = list(range(1,11))
+# print(nums)
+# print(type(nums))
+
+# rev = tuple(range(10,0,-1))
+# print(rev)
+
+# multipleOf3 = list (range(0,31,3))
+# print(multipleOf3)
