@@ -66,8 +66,19 @@ re-initialization (increment/decrement)
 # for i in fruits:
 #     print(i, end=" ")
 
-name="John DOe"
+# name="John DOe"
 
-for n in name:
-    print(n,end="")
+# for n in name:
+#     print(n,end="")
+
+# else part executes only when loop gets executed successfully
+# for i in range(5):
+#     if i==3:
+#         break
+#     print(i)
+# else:
+#     print("else block of for loop")
+
+# TODO: WAP to find whether a given no is prime or not
+
 
