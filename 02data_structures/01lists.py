@@ -75,6 +75,11 @@ char = ['a','b','c','d','e' ,'f','g']
 # TODO: WAP to remove all the occurrences of 2 from list =[2,2,2,1,4,5,6,7] 
 # [1,5,6,7]
 
+a= [2,2,2,1,4,5,6,7] 
+while 2 in a:
+    a.remove(2)
+print(a)
+
 # TODO: creating a list by taking user input
 # l = []
 # size= int(input("enter size of numbers: "))
