@@ -35,5 +35,5 @@ def main():
     todo_helper.close_connection()
 
 
-
-main()
+if __name__ == '__main__':
+    main()
