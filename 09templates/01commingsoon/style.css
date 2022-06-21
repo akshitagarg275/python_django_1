@@ -1,0 +1,31 @@
+body{
+    background: url("./images/bgGymOp\ \(1\).png")
+    no-repeat center center fixed;
+    background-size: cover;
+}
+
+div{
+    background-color: #dd4814;
+    width: 60%;
+    margin : 100px auto;
+    text-align: center;
+    border-radius: 25px;
+    opacity: .7;
+}
+
+button{
+    background-color: rgb(50, 50, 50);
+    color: white;
+    padding: 0px 20px 0px 20px;
+    font-size: 2em;
+    border-radius: 10px;
+}
+
+.h1{
+    font-size: 4em;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#p{
+    font-size: 1.8em;
+}
