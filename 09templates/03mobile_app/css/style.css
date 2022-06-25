@@ -1,0 +1,121 @@
+body{
+    background-image: url("../images/bg.png");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0 5%;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+}
+
+nav .nav-items{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+.brand-img{
+    flex:1;
+    margin:auto;
+}
+
+.brand-img img{
+    height: 80px;
+}
+
+.nav-logo{
+    display: block;
+}
+
+.nav-button{
+    border:none;
+    background-color: #E03B8B;
+    padding: 5px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+nav .nav-menu-icon{
+    display: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    flex : 1
+}
+
+.col{
+    display: flex;
+    flex: 0.5;
+    min-height: 100%;
+}
+
+.col-1{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #FFFFFF;
+}
+
+.col-1 p {
+    font-size: 25px;
+}
+
+.col-1 h1{
+    font-size: 55px;
+    margin: 20px 0;
+}
+
+.google-play-img{
+    height: 90px;
+}
+
+.phone{
+    height: 80%;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+@media screen and (max-width:1230px){
+    .phone{
+        height: 60%;
+    }
+    nav .nav-items{
+        display: none;
+    }
+    nav .nav-menu-icon{
+        display: block;
+        margin: auto;
+    }
+    nav .nav-menu-icon i{
+        color: #fff;
+        font-size: 40px;
+    }
+    .col-1{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:900px){
+    .phone{
+        display: none;
+    }
+    .google-play-img{
+        height: 50px;
+    }
+
+}
