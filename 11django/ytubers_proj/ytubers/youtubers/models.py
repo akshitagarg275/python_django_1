@@ -30,6 +30,7 @@ class Youtuber(models.Model):
     desc=RichTextField()
     video_url=models.CharField(max_length=50)
     price=models.CharField(max_length=10)
+    age=models.IntegerField(null=True,blank=True)
     height=models.IntegerField()
     subs_count=models.IntegerField()
     is_featured=models.BooleanField(default=False)
