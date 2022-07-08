@@ -8,3 +8,11 @@ def youtubers(request):
         'youtuber':youtuber
     }
     return render(request,'youtubers/youtubers.html',data)
+
+
+def single_youtuber(request, id):
+    youtuber = Youtuber.objects.get(id = id)
+    data={
+        'youtuber':youtuber
+    }
+    return render(request , 'youtubers/single_youtuber.html' ,data)

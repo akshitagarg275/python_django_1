@@ -2,5 +2,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-   path('',views.youtubers,name='youtubers')
+   path('',views.youtubers,name='youtubers'),
+   path('youtuber/<int:id>',views.single_youtuber ,name = "single_youtuber")
 ]

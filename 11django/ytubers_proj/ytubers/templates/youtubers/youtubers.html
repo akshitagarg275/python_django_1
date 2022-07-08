@@ -22,7 +22,9 @@
             {% for yt in youtuber %}
             <div class="card border-0 text-center">
               <div class="feature-text">
-                <img src="{{yt.photo.url}}" class="card-img-top" alt="team-member">
+                <a href="{% url 'single_youtuber' yt.id %}">
+                  <img src="{{yt.photo.url}}" class="card-img-top" alt="team-member">
+                </a>
                 {% if yt.is_featured %}
                   <span class="text-left bg-accent font-weight-bold">
                     Featured
