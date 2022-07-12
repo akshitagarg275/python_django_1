@@ -25,9 +25,18 @@ def search(request):
     city_search=Youtuber.objects.values_list('city',flat=True).distinct().order_by('city')
     if 'keyword' in request.GET:
         keyword = request.GET['keyword']
+        tubers = tubers.filter(desc__contains=keyword)
+    if 'camera' in request.GET:
+        camera = request.GET['camera']
+        tubers = tubers.filter(camera_type__iexact=camera)
+
+    if 'city' in request.GET:
+        city=request.get['city']
+        tubers = tubers.filter(city__iexact=city)
     
-    tubers = tubers.filter(desc__contains=keyword)
-    print(city_search)
+    if 'category' in request.GET:
+        category=request.GET['category']
+        tubers = tubers.filter(category__iexact=category)
 
     data = {
         'tubers': tubers,

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'webpages.apps.WebpagesConfig',
     'youtubers.apps.YoutubersConfig',
+    'accounts.apps.AccountsConfig',
     'ckeditor',
 ]
 
