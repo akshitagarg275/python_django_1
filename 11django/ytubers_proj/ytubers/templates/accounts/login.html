@@ -6,11 +6,13 @@
     <h1 class="text-center mt-5 mb-5 animate__animated animate__slideInDown">
       Login
     </h1>
+    {% include 'inc/messages.html' %}
     <div class="row">
       <div class="col-md-6 ">
         <img src="{% static './assets/images/login-image.png' %}" class="img-fluid" alt="img">
       </div>
-      <form class="col-md-5 offset-1" metho="post" action="{% url 'login' %}">
+      <form class="col-md-5 offset-1" method="POST" action="{% url 'login' %}">
+        {% csrf_token %}
         <div class="form-group">
           <input type="text" name="userName" class="form-control" placeholder="User Name">
         </div>
