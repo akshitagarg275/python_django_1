@@ -12,11 +12,12 @@ def login(request):
         password=request.POST['password']
         user = auth.authenticate(username=userName , password=password)
         print(userName,password)
+        print("user is :",user)
         if user is not None:
             auth.login(request,user)
             messages.success(request,"User logged in successfully")
             return redirect('dashboard')
-        else:
+        else: 
             messages.error(request,"Invalid credentials")
             return redirect('login')
     return render(request,'accounts/login.html')
@@ -37,6 +38,7 @@ def register(request):
                     return redirect('register')
                 else:
                     user = User.objects.create_user(first_name=firstName,last_name=lastName,username=userName,email=email,password=password)
+                    print(user)
                     user.save()
                     messages.success(request,"User created successfully")
                     return redirect('login')

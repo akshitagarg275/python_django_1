@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'webpages.apps.WebpagesConfig',
     'youtubers.apps.YoutubersConfig',
     'accounts.apps.AccountsConfig',
+    'hiretuber.apps.HiretuberConfig',
     'ckeditor',
 ]
 
