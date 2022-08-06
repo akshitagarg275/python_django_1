@@ -1,7 +1,7 @@
 {% extends 'main.html' %}
 
 {% block content %}
-    <form method="post" action = "">
+    <form method="post" action = "" , enctype="multipart/form-data">
         {% csrf_token %}
         <!-- {{form.title.label}}
         {{form.title}} -->

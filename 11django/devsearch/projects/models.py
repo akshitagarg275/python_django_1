@@ -1,3 +1,5 @@
+from distutils.command.upload import upload
+from email.policy import default
 from django.db import models
 
 import uuid
@@ -6,6 +8,7 @@ import uuid
 class Project(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField(blank=True  , null= True)
+    featured_image = models.ImageField(null = True , blank =True , default = 'default.jpg')
     demo_link = models.CharField(max_length=255)
     source_link = models.CharField(max_length=255)
     tags = models.ManyToManyField('Tag',blank=True)
