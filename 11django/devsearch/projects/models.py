@@ -1,11 +1,13 @@
 from distutils.command.upload import upload
 from email.policy import default
+from statistics import mode
 from django.db import models
-
+from users.models import Profile
 import uuid
 # Create your models here.
 
 class Project(models.Model):
+    owner =models.ForeignKey(Profile , null=True , blank=True , on_delete=models.SET_NULL)
     title = models.CharField(max_length=255)
     description = models.TextField(blank=True  , null= True)
     featured_image = models.ImageField(null = True , blank =True , default = 'default.jpg')
